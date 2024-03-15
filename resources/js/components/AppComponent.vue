@@ -1,13 +1,17 @@
 <template>
     <div class="container">
-        <h1>SPA</h1>
+        <p>
+             <router-link :to="{name: 'home'}">home</router-link>
+             <router-link :to="{name: 'about'}">about</router-link>
+        </p>
+        <div>
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
+
     }
 </script>
